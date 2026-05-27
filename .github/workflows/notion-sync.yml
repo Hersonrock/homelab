@@ -1,0 +1,26 @@
+name: Sync PlantUML To Notion
+
+on:
+
+  push:
+
+    paths:
+
+      - "docs/topology.plantuml"
+
+jobs:
+
+  sync:
+
+    runs-on: ubuntu-latest
+
+
+    steps:
+
+      - uses: actions/checkout@v4
+
+      - name: Read topology file
+
+        run: |
+
+          cat docs/topology.plantuml
