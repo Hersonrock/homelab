@@ -1,5 +1,5 @@
 @startuml
-title Lab Topology
+title Lab Topology Diagram
 
 skinparam linetype ortho
 skinparam packageStyle rectangle
