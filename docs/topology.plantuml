@@ -1,0 +1,42 @@
+@startuml
+title Lab Topology
+
+skinparam linetype ortho
+skinparam packageStyle rectangle
+
+cloud "ISP Router" as ISP
+
+rectangle "Lab Zone\n192.168.0.0/24" as LAB {
+
+    node "gateway.lab\n\nDebian\nNAT\nRouting\nDHCP Relay\nPXE\n\n192.168.0.2\n10.0.0.1" as GW
+
+    node "ad.lab\n\nAD\nDNS\nDHCP\n\n192.168.0.10" as AD
+
+    node "spike-pc\n\n192.168.0.41" as SPIKE
+
+    node "ubu-pc.lab\n\n192.168.0.42" as UBU
+}
+
+rectangle "internal.lab Zone\n10.0.0.0/24" as INTERNAL {
+
+    node "vm1.internal.lab\n\n10.0.0.41" as VM1
+
+    node "vm2.internal.lab\n\n10.0.0.42" as VM2
+}
+
+ISP -- GW
+ISP -- AD
+ISP -- SPIKE
+ISP -- UBU
+
+GW -- VM1
+GW -- VM2
+
+note right of GW
+Gateway between:
+192.168.0.0/24
+and
+10.0.0.0/24
+end note
+
+@enduml
