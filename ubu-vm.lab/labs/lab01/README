@@ -1,0 +1,11 @@
+BRIEF: This lab presents the basic issue of a corrupted GRUB2 configuration file.
+
+CAUSE:
+Configuration file on /boot/grub/grub.cfg is empty
+
+SYMPTOMS:
+The expected behavior will be GRUB booting onto rescue shell on boot.
+with error 'error: no such partition' or 'unknown filesystem'.
+
+The system will not reach the kernel.
+

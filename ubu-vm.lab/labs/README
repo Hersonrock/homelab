@@ -1,0 +1,5 @@
+These labs are created as a way to get hands on experiencie in handling issues
+
+Lab 01-  Corrupt GRUB2 Configuration file.
+	Concepts:  GRUB2 Config, boot entries, recovery mode, grub-install
+

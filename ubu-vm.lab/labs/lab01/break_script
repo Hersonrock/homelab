@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cp /boot/grub/grub.cfg /boot/grub/grub.cfg.bak
+echo "" > /boot/grub/grub.cfg
