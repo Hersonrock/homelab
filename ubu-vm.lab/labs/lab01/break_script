@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -f /boot/grub/grub.cfg ] 
+if [ -f /boot/grub/grub.cfg ]; then
 	cp /boot/grub/grub.cfg /boot/grub/grub.cfg.bak
 	echo "" > /boot/grub/grub.cfg
 	echo "$0 ran succesfully"
