@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
 
-cp /boot/grub/grub.cfg /boot/grub/grub.cfg.bak
-echo "" > /boot/grub/grub.cfg
+if [ -f /boot/grub/grub.cfg ] 
+	cp /boot/grub/grub.cfg /boot/grub/grub.cfg.bak
+	echo "" > /boot/grub/grub.cfg
+	echo "$0 ran succesfully"
+	exit 0 
+else
+	echo "\/boot\/grub\/grub.cgf does not exist"
+	echo "$0 failed"
+	exit 1
+fi
+
