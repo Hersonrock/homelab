@@ -13,7 +13,7 @@ if [ $? -eq 1 ]; then
 	rm -rf neovim
 
 	if nvim --version | grep -q "NVIM v0.12.2"; then
-	    echo "Neovim installed successfully"
+	    echo "Neovim 12.2 installed successfully"
 	fi
 else
 	echo "neovim already installed..."
