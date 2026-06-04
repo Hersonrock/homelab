@@ -13,7 +13,7 @@ cat > /var/www/html/index.html << 'EOF'
 <html>
 <head><title>Lab Server</title></head>
 <body>
-  <h1>demo2 is alive</h1>
+  <h1>http server(ubu-pc) is alive</h1>
   <p>Secret: password123</p>
 </body>
 </html>
