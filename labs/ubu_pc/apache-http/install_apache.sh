@@ -19,4 +19,6 @@ cat > /var/www/html/index.html << 'EOF'
 </html>
 EOF
 
+ufw allow 80/tcp
+ufw reload 
 
